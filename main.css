@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+}
+
+body {
+    background: url(./images/beach.png);
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "Lato", Helvetica, sans-serif;
+}
+
+#content {
+    background: hsl(0, 0%, 100%);
+    box-shadow: 0px 0px 15px 1px hsl(0, 0%, 0%);
+    margin: 5vw auto;
+    width: 70%;
+    min-width: 350px;
+    border-radius: 20px;
+}
+
+
+
+/*----------------header-------------------*/
+
+
+
+
+header {
+    width: 95%;
+    margin: auto;
+}
+
+header img {
+    width: 20vw;
+    display: block;
+    margin: auto;
+}
+
+figcaption {
+    font-size: 4vw;
+    text-align: center;
+    color: hsla(180, 63%, 45%, 0.87);
+    margin-bottom: 3vw;
+    font-family: "Coiny", cursive;
+}
+
+hr {
+    width: 90%;
+    margin: 3vw auto;
+}
+
+h1 {
+    font-size: 3vw;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 3vw;
+}
+
+header p {
+    font-size: 2vw;
+    text-align: center;
+    margin: 1vw;
+}
+
+
+
+
+/*-------------------main-------------------*/
+
+
+
+
+main {
+    margin: 1.5vw 5vw;
+    
+}
+
+legend {
+    font-size: 1.1rem;
+}
+
+
+h2 {
+    font-size: 1.8rem;
+}
+
+label, span {
+    font-size: 1.3rem;
+}
+
+
+[type="range"] {
+    width: 30vw;
+}
+
+#personal-info input {
+    max-width: 400px;
+    height: 30px;
+    width: 48%;
+    display: inline-block;
+    text-align: left;
+    margin: 1vw 0;
+}
+
+#personal-info label {
+    width: 40%;
+    display: inline-block;
+    text-align: right;
+    margin: 1vw 1vw;
+}
+
+#personal-info p {
+    margin: 3vw 5vw;
+    font-style: italic;
+    text-align: justify;
+}
+
+[type="text"],
+[type="email"],
+[type="number"],
+select,
+textarea {
+    font-size: 1rem;
+}
+
+fieldset {
+    margin: 2vw 8vw;
+    text-align: center;
+    border-radius: 5px;
+}
+
+fieldset legend {
+    text-align: left;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+fieldset label {
+    margin: 1vw;
+    text-transform: capitalize;
+}
+
+.section-separator {
+    margin: 1vw 0;
+    width: 30vw;
+}
+
+#taste div, 
+#serving-size div,
+#variety-of-flavors div,
+#serving-time div,
+#attentiveness div,
+#cleanliness div  {
+    display: inline-block;
+}
+
+[type="checkbox"],
+[type="radio"] {
+    font-size: 1rem;
+    vertical-align: text-top;
+}
+
+#overall p {
+    margin: 3vw 5vw;
+    font-style: italic;
+    text-align: justify;
+}
+
+#more-flavors-grid {
+    grid-template: repeat(5, auto) / 1fr 1fr;
+    justify-content: center;
+    display: grid;    
+}
+
+
+#more-flavors-grid div {
+    text-align: left;
+    margin: 1vw;
+}
+
+
+#suggestion-label {
+    font-weight: bold;
+    display: block;
+    margin: 3vw auto;
+    text-align: center;
+}
+
+textarea {
+    display: block;
+    width: 35vw;
+    margin: 2vw auto;
+    border-radius: 5px;
+    min-width: 300px;
+}
+
+#policy-submit {
+    padding-bottom: 2vw;
+}
+
+#policy-submit p {
+    width: 80%;
+    text-align: justify;
+    margin: 2vw auto;
+    padding: 1vw;
+    border: 1px solid hsl(0, 0%, 0%);
+    border-radius: 5px;
+}
+
+#policy-submit div {
+    width: 60%;
+    margin: 1vw auto;
+    text-align: center;
+}
+
+button {
+    display: block;
+    font-size: 2rem;
+    margin: 2vw auto;
+    text-transform: uppercase;
+    background: hsla(180, 63%, 45%, 0.87);
+    color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background: hsl(0, 79%, 44%);
+    
+}
+
+
+
+
+/*----------------media queries----------------*/
+
+
+
+
+
+@media (max-width: 1500px) {
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    label {
+        font-size: 1.1rem;
+    }
+
+}
+
+
+@media (max-width: 1000px) {
+
+    #content {
+        width: 80%;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+
+
+
+    header img {
+        width: 130px;
+    }
+
+    figcaption {
+        font-size: 1.8rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 1.2rem;
+    }
+
+    main {
+        margin: 5vw 5vw;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    #personal-info input {
+        height: 30px;
+        width: 97%;
+        margin: 1vw auto;
+    }
+    
+    #personal-info label {
+        width: 100%;
+        text-align: left;
+        margin: 1vw auto;
+    }
+
+    label#dropdown, select#gender {
+        padding-top: 3vw;
+        display: inline;
+    }
+    
+
+    fieldset {
+        margin: 5vw auto;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    hr {
+        margin: 5vw auto;
+    }
+
+    section {
+        margin: 5vw auto;
+    }
+
+    legend {
+        font-size: 1rem;
+    }
+
+    #more-flavors-grid {
+        grid-template: repeat(10, auto) / auto;
+    }
+
+    textarea {
+        height: 150px;
+        margin-bottom: 7vw; 
+    }
+
+    #policy-submit div {
+        margin: 4vw auto;
+    }
+
+    button {
+        margin: 8vw auto;
+        font-size: 1.8rem;
+    }
+}

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Charlie's Beach Ice Cream</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./main.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Coiny|Lato:400,700" rel="stylesheet">
+    </head>
+
+
+
+    <body>
+
+        <div id="content">
+
+            <header>
+
+                <figure>
+                    <img src="./images/ice_cream.png" alt="three ice cream cones logo">
+                    <figcaption id="title">Charlie's Beach Ice Cream</figcaption>    
+                </figure>
+                <hr>
+                <h1>Customer Satisfaction Survey</h1>
+                <p id="description">Help us serve you better.</p>
+
+            </header>
+
+
+            <main>
+
+                <form id="survey-form" action="#" method="POST">
+
+                    <section id="personal-info">
+                        <h2>Personal Information:</h2>
+                        <label for="name">Name:</label>
+                        <input id="name" name="name" type="text" placeholder="Type your name" required>
+                        <label for="email">Email address:</label>
+                        <input id="email" name="email" type="email" placeholder="Type your email" required>
+                        <label for="age">Age:</label>
+                        <input id="age" name="age" type="number" min="1" max="150" placeholder="Age" required>
+                        <br>
+                        <label for="gender" id="dropdown">Gender:</label>
+                        <select id="gender" name="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="rather-not-say">Rather not specify</option>
+                        </select>
+                        <p>Please ensure that a valid email address is entered as this is where we are going to send the free gift certificate
+                            for participating in the survey.</p>
+                    </section>
+                    <hr>
+                    <section>
+                        <h2>How is our food?</h2>
+                        <fieldset id="taste">
+                            <legend>Taste:</legend>
+                            <div>
+                                <input id="excellent-taste" name="taste" value="excellent" type="radio" required>
+                                <label for="excellent-taste">Excellent</label>
+                            </div>
+                            <div>
+                                <input id="good-taste" name="taste" value="good" type="radio">
+                                <label for="good-taste">Good</label>
+                            </div>
+                            <div>
+                                <input id="fair-taste" name="taste" value="fair" type="radio">
+                                <label for="fair-taste">Fair</label>
+                            </div>
+                            <div>
+                                <input id="poor-taste" name="taste" value="poor" type="radio">
+                                <label for="poor-taste">Poor</label>
+                            </div>
+                            <div>
+                                <input id="very-poor-taste" name="taste" value="very-poor" type="radio">
+                                <label for="very-poor-taste">Very poor</label>
+                            </div>
+                        </fieldset>
+                        <fieldset id="serving-size">
+                            <legend>Serving Size:</legend>
+                            <div>
+                                <input id="excellent-size" name="size" value="excellent" type="radio" required>
+                                <label for="excellent-size">Excellent</label>
+                            </div>
+                            <div>
+                                <input id="good-size" name="size" value="good" type="radio">
+                                <label for="good-size">Good</label>
+                            </div>
+                            <div>
+                                <input id="fair-size" name="size" value="fair" type="radio">
+                                <label for="fair-size">Fair</label>   
+                            </div>
+                            <div>
+                                <input id="poor-size" name="size" value="poor" type="radio">
+                                <label for="poor-size">Poor</label>
+                            </div>
+                            <div>
+                                <input id="very-poor-size" name="size" value="very-poor" type="radio">
+                                <label for="very-poor-size">Very poor</label>
+                            </div>
+                        </fieldset>
+                        <fieldset id="variety-of-flavors">
+                            <legend>Variety of Flavors:</legend>
+                            <div>
+                                <input id="excellent-variety" name="variety" value="excellent" type="radio" required>
+                                <label for="excellent-variety">Excellent</label>
+                            </div>
+                            <div>
+                                <input id="good-variety" name="variety" value="good" type="radio">
+                                <label for="good-variety">Good</label>
+                            </div>   
+                            <div>
+                                <input id="fair-variety" name="variety" value="fair" type="radio">
+                                <label for="fair-variety">Fair</label>
+                            </div>
+                            <div>
+                                <input id="poor-variety" name="variety" value="poor" type="radio">
+                                <label for="poor-variety">Poor</label>
+                            </div>
+                            <div>
+                                <input id="very-poor-variety" name="variety" value="very-poor" type="radio">
+                                <label for="very-poor-variety">Very poor</label>
+                            </div>
+                        </fieldset>
+                    </section>
+                    <section>
+                        <h2>How is our service?</h2>
+                        <fieldset id="serving-time">
+                            <legend>Serving Time:</legend>
+                            <div>
+                                <input id="excellent-time" name="time" value="excellent" type="radio" required>
+                                <label for="excellent-time">Excellent</label>
+                            </div>
+                            <div>
+                                <input id="good-time" name="time" value="good" type="radio">
+                                <label for="good-time">Good</label>
+                            </div>
+                            <div>
+                                <input id="fair-time" name="time" value="fair" type="radio">
+                                <label for="fair-time">Fair</label>
+                            </div>
+                            <div>
+                                <input id="poor-time" name="time" value="poor" type="radio">
+                                <label for="poor-time">Poor</label>
+                            </div>
+                            <div>
+                                <input id="very-poor-time" name="time" value="very-poor" type="radio">
+                                <label for="very-poor-time">Very poor</label>
+                            </div>    
+                        </fieldset>
+                        <fieldset id="attentiveness">
+                            <legend>Attentiveness of Servers:</legend>
+                            <div>
+                                <input id="excellent-attentiveness" name="attentiveness" value="excellent" type="radio" required>
+                                <label for="excellent-attentiveness">Excellent</label>
+                            </div>
+                            <div>
+                                <input id="good-attentiveness" name="attentiveness" value="good" type="radio">
+                                <label for="good-attentiveness">Good</label>
+                            </div>
+                            <div>
+                                <input id="fair-attentiveness" name="attentiveness" value="fair" type="radio">
+                                <label for="fair-attentiveness">Fair</label>
+                            </div>
+                            <div>
+                                <input id="poor-attentiveness" name="attentiveness" value="poor" type="radio">
+                                <label for="poor-attentiveness">Poor</label>
+                            </div>
+                            <div>
+                                <input id="very-poor-attentiveness" name="attentiveness" value="very-poor" type="radio">
+                                <label for="very-poor-attentiveness">Very poor</label>
+                            </div>
+                        </fieldset>
+                        <fieldset id="cleanliness">
+                            <legend>Cleanliness:</legend>
+                            <div>
+                                <input id="excellent-cleanliness" name="cleanliness" value="excellent" type="radio" required>
+                                <label for="excellent-cleanliness">Excellent</label>
+                            </div>
+                            <div>
+                                <input id="good-cleanliness" name="cleanliness" value="good" type="radio">
+                                <label for="good-cleanliness">Good</label>
+                            </div>
+                            <div>
+                                <input id="fair-cleanliness" name="cleanliness" value="fair" type="radio">
+                                <label for="fair-cleanliness">Fair</label>
+                            </div>
+                            <div>
+                                <input id="poor-cleanliness" name="cleanliness" value="poor" type="radio">
+                                <label for="poor-cleanliness">Poor</label>
+                            </div>
+                            <div>
+                                <input id="very-poor-cleanliness" name="cleanliness" value="very-poor" type="radio">
+                                <label for="very-poor-cleanliness">Very Poor</label>
+                            </div>
+                        </fieldset>
+                    </section>
+                    <section id="overall">
+                        <h2>Overall experience:</h2>
+                        <fieldset>
+                            <legend>How satisfied are you with your experience?</legend>
+                            <span>1</span>
+                            <input id="satisfaction-rating" name="satisfaction-rating" type="range" min="0" max="10" required>
+                            <span>10</span>
+                        </fieldset>
+                        <fieldset>
+                            <legend>How likely are you to recommend us to your friends or family members?</legend>
+                            <span>1</span>
+                            <input id="recommendation-rating" name="recommendation-rating" type="range" min="0" max="10" required>
+                            <span>10</span>
+                        </fieldset>
+                        <p>10 indicates very satisfied / very likely to recommend while 1 indicates very unsatisfied / very unlikely
+                            to recommend.</p>
+                    </section> 
+                    <section>
+                        <h2>Further improvements:</h2>
+                        <fieldset>
+                            <legend>Check any flavors you would like see in our menu in the future:</legend>
+                            <div id="more-flavors-grid">
+                                <div>
+                                    <input id="banoffee-cream-cheese" name="flavors" value="banoffee" type="checkbox">
+                                    <label for="banoffee-cream-cheese">Banoffee-Cream Cheese</label>
+                                </div>
+                                <div>
+                                    <input id="honey-rhubarb" name="flavors" value="honey-rhubarb" type="checkbox">
+                                    <label for="honey-rhubarb">Honey-Rhubarb</label>
+                                </div>
+                                <div>
+                                    <input id="chocolate-buttermint" name="flavors" value="chocolate-buttermint" type="checkbox">
+                                    <label for="chocolate-buttermint">chocolate-buttermint</label>
+                                </div>
+                                <div>
+                                    <input id="maple-lemongrass" name="flavors" value="maple-lemongrass" type="checkbox">
+                                    <label for="maple-lemongrass">maple-lemongrass</label>
+                                </div>
+                                <div>
+                                    <input id="whiskey-orange" name="flavors" value="whiskey-orange" type="checkbox">
+                                    <label for="whiskey-orange">whiskey-orange</label>
+                                </div>
+                                <div>
+                                    <input id="chilli-vanilla" name="flavors" value="chilli-vanilla" type="checkbox">
+                                    <label for="chilli-vanilla">chilli-vanilla</label>
+                                </div>
+                                <div>
+                                    <input id="lemon-apple" name="flavors" value="lemon-apple" type="checkbox">
+                                    <label for="lemon-apple">lemon-apple</label>
+                                </div>
+                                <div>
+                                    <input id="vanilla-bourbon" name="flavors" value="vanilla=bourbon" type="checkbox">
+                                    <label for="vanilla-bourbon">vanilla-bourbon</label>
+                                </div>
+                                <div>
+                                    <input id="strawberry-maple" name="flavors" value="strawberry-maple" type="checkbox">
+                                    <label for="strawberry-maple">strawberry-maple</label>
+                                </div>
+                                <div id="other-flavor">
+                                    <label for="other">Other:</label>
+                                    <input id="other" name="flavors" type="text" maxlength="30">
+                                </div>
+                            </div>
+                        </fieldset>
+                        <label for="suggestion" id="suggestion-label">Do you have any further comments or suggestions?</label>
+                        <textarea id="suggestion" name="suggestion" rows="10" cols="50"></textarea>
+                    </section>
+                    <hr>   
+                    <section id="policy-submit">
+                        <h2>Privacy Policy:</h2>
+                        <p>All personal information entered will remain confidential and will neither be sold nor shared with any
+                            third parties. All information will be used solely for this particular survery with the purpose of 
+                            improving our service and will not be used for any further surveys in the future.</p>
+                        <div>
+                            <input id="policy-accept" name="policy" value="accept" type="checkbox" required>
+                            <label for="policy-accept">I have read and understood the privacy policy stated above.</label> 
+                        </div>
+
+                        <button type="submit">Submit</button>
+                    </section>
+                </form>
+
+
+            </main>
+
+
+        
+        </div>
+        
+
+
+    </body>
+
+
+</html>
